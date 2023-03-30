@@ -78,7 +78,7 @@ def odoo_config():
     time.sleep(30)
 def download_odoo():
     os.system("clear")
-    owner="\033[31m\t\t\t\t Script By Htet Arkar Kyaw"
+    owner="\n\033[31m\t\t\t\t Script By Htet Arkar Kyaw(A-Coder)\n"
     for char in owner:
         time.sleep(0.2)
         sys.stdout.write(char)
@@ -138,13 +138,20 @@ def node():
     os.system("clear")
 def auto():
     os.system("clear")
-   # system_update()
+    owner="\n\033[31m\t\t\t\t Script By Htet Arkar Kyaw(A-Coder)\n"
+    for char in owner:
+        time.sleep(0.2)
+        sys.stdout.write(char)
+        sys.stdout.flush()
+    time.sleep(3)
+    os.system("clear")
+    system_update()
    
-   # download_odoo()
-   # pogresql_dbcreate()
+    download_odoo()
+    pogresql_dbcreate()
     
-    #python_depends()
-    #node() 
+    python_depends()
+    node() 
     nginx_config()
     odoo_config()
     print("\033[32m \t\t\tInstallation Finsh")
